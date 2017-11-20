@@ -9,11 +9,15 @@
 /* Begin PBXBuildFile section */
 		EE1294E81FB5ECFB0052043E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1294E71FB5ECFB0052043E /* AppDelegate.swift */; };
 		EE1294EA1FB5ECFB0052043E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1294E91FB5ECFB0052043E /* ViewController.swift */; };
-		EE1294ED1FB5ECFB0052043E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE1294EB1FB5ECFB0052043E /* Main.storyboard */; };
 		EE1294EF1FB5ECFB0052043E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE1294EE1FB5ECFB0052043E /* Assets.xcassets */; };
 		EE1294F21FB5ECFB0052043E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE1294F01FB5ECFB0052043E /* LaunchScreen.storyboard */; };
 		EE1294FD1FB5ECFB0052043E /* describeMeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1294FC1FB5ECFB0052043E /* describeMeTests.swift */; };
 		EE1295081FB5ECFB0052043E /* describeMeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1295071FB5ECFB0052043E /* describeMeUITests.swift */; };
+		EE2D2B191FBEF61A00687AA8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE2D2B171FBEF61900687AA8 /* Main.storyboard */; };
+		EED0BDD61FBC7CC8002CB050 /* Andale-Mono.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EED0BDD51FBC7C75002CB050 /* Andale-Mono.ttf */; };
+		EED0BDD81FBC905A002CB050 /* MoreInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED0BDD71FBC9059002CB050 /* MoreInfo.swift */; };
+		EED0BDDA1FBC90FC002CB050 /* Experience.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED0BDD91FBC90FC002CB050 /* Experience.swift */; };
+		EED0BDDC1FBC9116002CB050 /* Passion.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED0BDDB1FBC9116002CB050 /* Passion.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +41,6 @@
 		EE1294E41FB5ECFB0052043E /* describeMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = describeMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE1294E71FB5ECFB0052043E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EE1294E91FB5ECFB0052043E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		EE1294EC1FB5ECFB0052043E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EE1294EE1FB5ECFB0052043E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EE1294F11FB5ECFB0052043E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EE1294F31FB5ECFB0052043E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,6 +50,11 @@
 		EE1295031FB5ECFB0052043E /* describeMeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = describeMeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE1295071FB5ECFB0052043E /* describeMeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = describeMeUITests.swift; sourceTree = "<group>"; };
 		EE1295091FB5ECFB0052043E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE2D2B181FBEF61900687AA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EED0BDD51FBC7C75002CB050 /* Andale-Mono.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Andale-Mono.ttf"; sourceTree = "<group>"; };
+		EED0BDD71FBC9059002CB050 /* MoreInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreInfo.swift; sourceTree = "<group>"; };
+		EED0BDD91FBC90FC002CB050 /* Experience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Experience.swift; sourceTree = "<group>"; };
+		EED0BDDB1FBC9116002CB050 /* Passion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Passion.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +89,7 @@
 				EE1294FB1FB5ECFB0052043E /* describeMeTests */,
 				EE1295061FB5ECFB0052043E /* describeMeUITests */,
 				EE1294E51FB5ECFB0052043E /* Products */,
+				EE1295151FB9CBAA0052043E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,12 +106,16 @@
 		EE1294E61FB5ECFB0052043E /* describeMe */ = {
 			isa = PBXGroup;
 			children = (
+				EED0BDD51FBC7C75002CB050 /* Andale-Mono.ttf */,
 				EE1294E71FB5ECFB0052043E /* AppDelegate.swift */,
 				EE1294E91FB5ECFB0052043E /* ViewController.swift */,
-				EE1294EB1FB5ECFB0052043E /* Main.storyboard */,
 				EE1294EE1FB5ECFB0052043E /* Assets.xcassets */,
 				EE1294F01FB5ECFB0052043E /* LaunchScreen.storyboard */,
+				EE2D2B171FBEF61900687AA8 /* Main.storyboard */,
 				EE1294F31FB5ECFB0052043E /* Info.plist */,
+				EED0BDD71FBC9059002CB050 /* MoreInfo.swift */,
+				EED0BDD91FBC90FC002CB050 /* Experience.swift */,
+				EED0BDDB1FBC9116002CB050 /* Passion.swift */,
 			);
 			path = describeMe;
 			sourceTree = "<group>";
@@ -123,6 +136,13 @@
 				EE1295091FB5ECFB0052043E /* Info.plist */,
 			);
 			path = describeMeUITests;
+			sourceTree = "<group>";
+		};
+		EE1295151FB9CBAA0052043E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -188,23 +208,31 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 0910;
 				ORGANIZATIONNAME = "Rany Azevedo";
 				TargetAttributes = {
 					EE1294E31FB5ECFB0052043E = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 5U486QM88E;
+						LastSwiftMigration = 0910;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 0;
+							};
+						};
 					};
 					EE1294F71FB5ECFB0052043E = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 5U486QM88E;
+						LastSwiftMigration = 0910;
 						ProvisioningStyle = Automatic;
 						TestTargetID = EE1294E31FB5ECFB0052043E;
 					};
 					EE1295021FB5ECFB0052043E = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 5U486QM88E;
+						LastSwiftMigration = 0910;
 						ProvisioningStyle = Automatic;
 						TestTargetID = EE1294E31FB5ECFB0052043E;
 					};
@@ -235,9 +263,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EED0BDD61FBC7CC8002CB050 /* Andale-Mono.ttf in Resources */,
 				EE1294F21FB5ECFB0052043E /* LaunchScreen.storyboard in Resources */,
 				EE1294EF1FB5ECFB0052043E /* Assets.xcassets in Resources */,
-				EE1294ED1FB5ECFB0052043E /* Main.storyboard in Resources */,
+				EE2D2B191FBEF61A00687AA8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,8 +291,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EED0BDDC1FBC9116002CB050 /* Passion.swift in Sources */,
 				EE1294EA1FB5ECFB0052043E /* ViewController.swift in Sources */,
 				EE1294E81FB5ECFB0052043E /* AppDelegate.swift in Sources */,
+				EED0BDD81FBC905A002CB050 /* MoreInfo.swift in Sources */,
+				EED0BDDA1FBC90FC002CB050 /* Experience.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,20 +331,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		EE1294EB1FB5ECFB0052043E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EE1294EC1FB5ECFB0052043E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		EE1294F01FB5ECFB0052043E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				EE1294F11FB5ECFB0052043E /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		EE2D2B171FBEF61900687AA8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EE2D2B181FBEF61900687AA8 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -328,7 +360,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -336,7 +370,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -379,7 +417,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -387,7 +427,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -422,7 +466,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = RanyTa.describeMe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -435,7 +480,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = RanyTa.describeMe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -449,7 +495,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = RanyTa.describeMeTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/describeMe.app/describeMe";
 			};
 			name = Debug;
@@ -464,7 +511,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = RanyTa.describeMeTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/describeMe.app/describeMe";
 			};
 			name = Release;
@@ -478,7 +526,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = RanyTa.describeMeUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_TARGET_NAME = describeMe;
 			};
 			name = Debug;
@@ -492,7 +541,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = RanyTa.describeMeUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_TARGET_NAME = describeMe;
 			};
 			name = Release;
@@ -516,6 +566,7 @@
 				EE12950E1FB5ECFB0052043E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EE12950F1FB5ECFB0052043E /* Build configuration list for PBXNativeTarget "describeMeTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +575,7 @@
 				EE1295111FB5ECFB0052043E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EE1295121FB5ECFB0052043E /* Build configuration list for PBXNativeTarget "describeMeUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +584,7 @@
 				EE1295141FB5ECFB0052043E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

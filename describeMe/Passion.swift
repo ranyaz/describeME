@@ -15,12 +15,23 @@ class Passion: UIViewController {
     @IBOutlet var passionsList: [UIButton]!
     @IBOutlet var passionLabel: [UITextField]!
     
-    
-    func showLabel(){
-        for label in passionLabel {
-            label.isHidden = true
-        }
+    @IBAction func growInClick(_ sender: UIButton) {
+        print("cxdsfg")
+//            target.transform = CGAffineTransform(scaleX: 0.01, y: 0.1)
+//            UIView.animate(withDuration: 2.0,
+//                       delay: 0,
+//                       usingSpringWithDamping: 0.2,
+//                       initialSpringVelocity: 6.0,
+//                       options: .allowUserInteraction,
+//                       animations: { [weak self] in
+//                        target.transform = .identity
+//            },
+//                       completion: nil)
     }
+    
+
+    
+    
     
     @IBAction func closeModal(_ sender: Any) {
         let transition = CATransition()
@@ -35,9 +46,11 @@ class Passion: UIViewController {
 
     
     override func viewDidLoad() {
+        for btn in passionsList {
+            btn.addTarget(self, action: "growInClick:", for: UIControlEvents.touchUpInside)
+        }
         super.viewDidLoad()
         rotateButtons()
-        self.navigationController?.navigationBar.barTintColor = .white
 
     }
     

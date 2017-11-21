@@ -357,10 +357,6 @@
                                     <constraint firstAttribute="width" constant="495" id="HyD-CL-pyL"/>
                                 </constraints>
                             </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="flippers" translatesAutoresizingMaskIntoConstraints="NO" id="tts-YY-2DR">
-                                <rect key="frame" x="254" y="357" width="80" height="80"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Red Wine" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="k9Y-UB-y49">
                                 <rect key="frame" x="105" y="125" width="88" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -368,14 +364,6 @@
                                 <fontDescription key="fontDescription" name="AndaleMono" family="Andale Mono" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="football" translatesAutoresizingMaskIntoConstraints="NO" id="0DT-Q6-gGj">
-                                <rect key="frame" x="254" y="197" width="80" height="80"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="shrimp" translatesAutoresizingMaskIntoConstraints="NO" id="x12-yf-70W">
-                                <rect key="frame" x="254" y="37" width="80" height="80"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Drums" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6kz-Ga-Mmj">
                                 <rect key="frame" x="109" y="603" width="83" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -397,10 +385,6 @@
                                 <fontDescription key="fontDescription" name="AndaleMono" family="Andale Mono" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="bicycle" translatesAutoresizingMaskIntoConstraints="NO" id="GKn-f8-2H8">
-                                <rect key="frame" x="109" y="357" width="80" height="80"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Swim" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="p97-Lr-7jV">
                                 <rect key="frame" x="254" y="446" width="83" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -408,18 +392,6 @@
                                 <fontDescription key="fontDescription" name="AndaleMono" family="Andale Mono" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="drum" translatesAutoresizingMaskIntoConstraints="NO" id="1cJ-4c-o6K">
-                                <rect key="frame" x="109" y="516" width="80" height="80"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="clapperboard" translatesAutoresizingMaskIntoConstraints="NO" id="gtJ-tX-QAf">
-                                <rect key="frame" x="109" y="197" width="80" height="80"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="saxophone" translatesAutoresizingMaskIntoConstraints="NO" id="dB9-Wt-Rm1">
-                                <rect key="frame" x="254" y="517" width="80" height="80"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Movies" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6Ez-Ju-IYb">
                                 <rect key="frame" x="109" y="285" width="83" height="25"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -467,6 +439,97 @@
                                     </attributedString>
                                 </state>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gTP-Uk-m4d">
+                                <rect key="frame" x="253" y="37" width="81" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="shrimp">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content=" Red wine">
+                                            <attributes>
+                                                <font key="NSFont" metaFont="system" size="18"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4sH-A5-9PN">
+                                <rect key="frame" x="109" y="197" width="81" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="clapperboard">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content=" Red wine">
+                                            <attributes>
+                                                <font key="NSFont" metaFont="system" size="18"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6SJ-Ax-ifG">
+                                <rect key="frame" x="253" y="197" width="81" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="football">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content=" Red wine">
+                                            <attributes>
+                                                <font key="NSFont" metaFont="system" size="18"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DeO-cU-pw0">
+                                <rect key="frame" x="109" y="357" width="81" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="bicycle">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content=" Red wine">
+                                            <attributes>
+                                                <font key="NSFont" metaFont="system" size="18"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2MB-mH-gMg">
+                                <rect key="frame" x="253" y="357" width="81" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="flippers">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content=" Red wine">
+                                            <attributes>
+                                                <font key="NSFont" metaFont="system" size="18"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cUy-Ud-wix">
+                                <rect key="frame" x="109" y="517" width="81" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="drum">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content=" Red wine">
+                                            <attributes>
+                                                <font key="NSFont" metaFont="system" size="18"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qyu-8B-EI3">
+                                <rect key="frame" x="253" y="517" width="81" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="saxophone">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content=" Red wine">
+                                            <attributes>
+                                                <font key="NSFont" metaFont="system" size="18"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
@@ -486,6 +549,13 @@
                         <outletCollection property="passionLabel" destination="hzJ-dc-R7B" collectionClass="NSMutableArray" id="4hT-ba-yre"/>
                         <outletCollection property="passionLabel" destination="4n0-mG-iab" collectionClass="NSMutableArray" id="Pcv-1S-g0M"/>
                         <outletCollection property="passionLabel" destination="6kz-Ga-Mmj" collectionClass="NSMutableArray" id="tvb-ia-xdd"/>
+                        <outletCollection property="passionsList" destination="gTP-Uk-m4d" collectionClass="NSMutableArray" id="Sqq-m6-oaD"/>
+                        <outletCollection property="passionsList" destination="4sH-A5-9PN" collectionClass="NSMutableArray" id="KBJ-6x-xqP"/>
+                        <outletCollection property="passionsList" destination="6SJ-Ax-ifG" collectionClass="NSMutableArray" id="QLB-VQ-mp9"/>
+                        <outletCollection property="passionsList" destination="DeO-cU-pw0" collectionClass="NSMutableArray" id="y5d-oU-6z6"/>
+                        <outletCollection property="passionsList" destination="2MB-mH-gMg" collectionClass="NSMutableArray" id="Amw-KE-BbY"/>
+                        <outletCollection property="passionsList" destination="cUy-Ud-wix" collectionClass="NSMutableArray" id="zvD-q9-lh6"/>
+                        <outletCollection property="passionsList" destination="Qyu-8B-EI3" collectionClass="NSMutableArray" id="lsk-Ah-hJe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wS9-qO-xR4" userLabel="First Responder" sceneMemberID="firstResponder"/>

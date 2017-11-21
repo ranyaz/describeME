@@ -16,19 +16,20 @@ class Passion: UIViewController {
     @IBOutlet var passionLabel: [UITextField]!
     
     @IBAction func growInClick(_ sender: UIButton) {
-        print("cxdsfg")
-//            target.transform = CGAffineTransform(scaleX: 0.01, y: 0.1)
-//            UIView.animate(withDuration: 2.0,
-//                       delay: 0,
-//                       usingSpringWithDamping: 0.2,
-//                       initialSpringVelocity: 6.0,
-//                       options: .allowUserInteraction,
-//                       animations: { [weak self] in
-//                        target.transform = .identity
-//            },
-//                       completion: nil)
+        let btnsendtag: UIButton = sender
+        if btnsendtag.tag == 1 {
+            btnsendtag.transform = CGAffineTransform(scaleX: 0.01, y: 0.1)
+            UIView.animate(withDuration: 2.0,
+                       delay: 0,
+                       usingSpringWithDamping: 0.2,
+                       initialSpringVelocity: 6.0,
+                       options: .allowUserInteraction,
+                       animations: { [weak self] in
+                        btnsendtag.transform = .identity
+            },
+                       completion: nil)
+        }
     }
-    
 
     
     
@@ -47,7 +48,8 @@ class Passion: UIViewController {
     
     override func viewDidLoad() {
         for btn in passionsList {
-            btn.addTarget(self, action: "growInClick:", for: UIControlEvents.touchUpInside)
+            btn.addTarget(self, action: #selector(growInClick), for: .touchUpInside)
+            btn.tag = 1
         }
         super.viewDidLoad()
         rotateButtons()

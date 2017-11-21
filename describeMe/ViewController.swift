@@ -18,37 +18,16 @@ class ViewController: UIViewController {
     
     var arrayOfPics = [#imageLiteral(resourceName: "tony.jpeg"),#imageLiteral(resourceName: "tony2"),#imageLiteral(resourceName: "tony3"),#imageLiteral(resourceName: "tony4"),#imageLiteral(resourceName: "tony5")]
     
+    
     @IBAction func changeMainPic(_ sender: Any) {
         let randomPic = Int(arc4random_uniform(UInt32(arrayOfPics.count)))
         mainPic.setImage(arrayOfPics[randomPic], for: .normal)
     }
     
-    @IBAction func shoreMoreInfo(_ sender: Any) {
-        let view = self.storyboard?.instantiateViewController(withIdentifier: "MoreInfo") as! MoreInfo
-
-        let transition = CATransition()
-        transition.duration = 0.0
-        transition.type = kCATransitionPush
-        transition.subtype = kCATransitionFromLeft
-        self.view.window!.layer.add(transition, forKey: kCATransition)
-        
-        self.present(view, animated: false)
+    func rotateButtons() {
+        moreInfo.transform = CGAffineTransform(rotationAngle: CGFloat.pi / 2)
+        passion.transform = CGAffineTransform(rotationAngle: -CGFloat.pi / 2)
     }
-    
-    @IBAction func showPassion(_ sender: Any) {
-        let view = self.storyboard?.instantiateViewController(withIdentifier: "Passion") as! Passion
-        let transition = CATransition()
-        transition.duration = 0.0
-        transition.type = kCATransitionPush
-        transition.subtype = kCATransitionFromRight
-        self.view.window!.layer.add(transition, forKey: kCATransition)
-//        self.view.window!.layer.shadowColor = UIColor.red.cgColor
-
-        self.present(view, animated: false)
-
-        
-    }
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -60,13 +39,5 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    
-    func rotateButtons() {
-        moreInfo.transform = CGAffineTransform(rotationAngle: CGFloat.pi / 2)
-        passion.transform = CGAffineTransform(rotationAngle: -CGFloat.pi / 2)
-    }
-
-    
-
 }
 

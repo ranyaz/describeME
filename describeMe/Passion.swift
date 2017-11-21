@@ -13,6 +13,14 @@ class Passion: UIViewController {
     @IBOutlet weak var passion: UIButton!
     
     @IBOutlet var passionsList: [UIButton]!
+    @IBOutlet var passionLabel: [UITextField]!
+    
+    
+    func showLabel(){
+        for label in passionLabel {
+            label.isHidden = true
+        }
+    }
     
     @IBAction func closeModal(_ sender: Any) {
         let transition = CATransition()
@@ -22,7 +30,12 @@ class Passion: UIViewController {
         self.view.window!.layer.add(transition, forKey: kCATransition)
         
         dismiss(animated: false)
-
+    }
+    
+    @IBAction func unwindToViewController (sender: UIStoryboardSegue){
+        navigationController?.popViewController(animated: false)
+        dismiss(animated: true, completion: nil)
+        
     }
     
     override func viewDidLoad() {

@@ -13,18 +13,11 @@ class MoreInfo: UIViewController {
     @IBOutlet weak var moreInfo: UIButton!
     @IBOutlet weak var closeButton: UIButton!
     
-
-    @IBAction func closeModal(_ sender: Any) {
-        let transition = CATransition()
-        transition.duration = 0
-        transition.type = kCATransitionPush
-        transition.subtype = kCATransitionFromRight
-        self.view.window!.layer.add(transition, forKey: kCATransition)
-        
-        dismiss(animated: false)
+    
+    @IBAction func unwindToViewController (sender: UIStoryboardSegue){
+        navigationController?.popViewController(animated: false)
+        dismiss(animated: true, completion: nil)
     }
-    
-    
     
 
     @IBAction func openMap(_ sender: Any) {

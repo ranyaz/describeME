@@ -70,7 +70,7 @@
                                     <color key="titleColor" red="0.01962154172" green="0.01956331171" blue="0.023912029340000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="closeModal:" destination="iff-9M-HVS" eventType="touchUpInside" id="mme-8W-T7X"/>
+                                    <segue destination="0Wt-6h-5zD" kind="custom" customClass="CloseModalLeft" customModule="describeMe" customModuleProvider="target" id="xqx-wp-feC"/>
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Carpe Diem" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="oWT-v4-Gxb">
@@ -113,13 +113,13 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ybo-oH-twA" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="left" id="ZFz-9r-Q9H">
+                <swipeGestureRecognizer direction="right" id="ZFz-9r-Q9H">
                     <connections>
-                        <action selector="closeModal:" destination="iff-9M-HVS" id="Qk9-hF-Jmu"/>
+                        <segue destination="0Wt-6h-5zD" kind="custom" customClass="CloseModalLeft" customModule="describeMe" customModuleProvider="target" id="9wV-72-ufy"/>
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-516" y="931"/>
+            <point key="canvasLocation" x="-434" y="139"/>
         </scene>
         <!--Tony-->
         <scene sceneID="tne-QT-ifu">
@@ -152,7 +152,7 @@
                                     <color key="titleColor" red="0.019621541723608971" green="0.019563311710953712" blue="0.023912029340863228" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="shoreMoreInfo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8TY-gz-X5K"/>
+                                    <segue destination="iff-9M-HVS" kind="custom" customClass="SegueFromLeft" customModule="describeMe" customModuleProvider="target" id="uex-0P-qkw"/>
                                 </connections>
                             </button>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cqJ-oi-Zpi">
@@ -200,7 +200,7 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="showPassion:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eq6-GV-G6d"/>
+                                    <segue destination="1nu-lA-MR4" kind="custom" customClass="SegueFromRight" customModule="describeMe" customModuleProvider="target" id="9p4-Nd-qqV"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -244,12 +244,13 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <swipeGestureRecognizer direction="left" id="3js-D2-Fc9">
                     <connections>
-                        <action selector="showPassion:" destination="BYZ-38-t0r" id="tUQ-rc-o3k"/>
+                        <segue destination="1nu-lA-MR4" kind="custom" customClass="SegueFromRight" customModule="describeMe" customModuleProvider="target" id="YAV-WP-Rj7"/>
                     </connections>
                 </swipeGestureRecognizer>
                 <swipeGestureRecognizer direction="right" id="Nzh-sw-B6T">
                     <connections>
                         <action selector="shoreMoreInfo:" destination="BYZ-38-t0r" id="dCg-VQ-C23"/>
+                        <segue destination="iff-9M-HVS" kind="custom" customClass="SegueFromLeft" customModule="describeMe" customModuleProvider="target" id="VZt-zf-gPs"/>
                     </connections>
                 </swipeGestureRecognizer>
                 <swipeGestureRecognizer direction="up" id="TFe-jq-zPC">
@@ -355,9 +356,6 @@
                                 <constraints>
                                     <constraint firstAttribute="width" constant="495" id="HyD-CL-pyL"/>
                                 </constraints>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="hBr-xV-RrA" appends="YES" id="t3b-8u-sxu"/>
-                                </connections>
                             </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="flippers" translatesAutoresizingMaskIntoConstraints="NO" id="tts-YY-2DR">
                                 <rect key="frame" x="254" y="357" width="80" height="80"/>
@@ -453,17 +451,22 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="closeModal:" destination="1nu-lA-MR4" eventType="touchUpInside" id="mcR-VN-3Di"/>
+                                    <action selector="unwindToViewControllerWithSender:" destination="1nu-lA-MR4" eventType="touchUpInside" id="81C-wZ-IKN"/>
+                                    <segue destination="ppA-kt-PTv" kind="unwind" unwindAction="unwindToViewControllerWithSender:" id="bbQ-xU-CBk"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X6h-jh-Arh">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="X6h-jh-Arh">
                                 <rect key="frame" x="109" y="37" width="81" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title=" " image="wine-bottle"/>
-                                <connections>
-                                    <action selector="showDetails:" destination="1nu-lA-MR4" eventType="touchUpInside" id="1ek-mt-Lp4"/>
-                                    <action selector="sowPopUp:" destination="1nu-lA-MR4" eventType="touchUpInside" id="fbX-GC-C1C"/>
-                                </connections>
+                                <state key="normal" image="wine-bottle">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content=" Red wine">
+                                            <attributes>
+                                                <font key="NSFont" metaFont="system" size="18"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -473,22 +476,33 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="passion" destination="zy1-Y3-r7J" id="JzI-DZ-dif"/>
+                        <outlet property="passion" destination="zy1-Y3-r7J" id="H2y-Da-lhf"/>
+                        <outlet property="passionLabel" destination="k9Y-UB-y49" id="uBj-Hn-qYh"/>
                         <outletCollection property="passionsList" destination="X6h-jh-Arh" collectionClass="NSMutableArray" id="nHd-rR-qOc"/>
+                        <outletCollection property="passionLabel" destination="k9Y-UB-y49" collectionClass="NSMutableArray" id="cfZ-QJ-bWU"/>
+                        <outletCollection property="passionLabel" destination="9mE-6X-Ang" collectionClass="NSMutableArray" id="q1R-AO-9cS"/>
+                        <outletCollection property="passionLabel" destination="lEU-hO-UII" collectionClass="NSMutableArray" id="Pai-XI-LgY"/>
+                        <outletCollection property="passionLabel" destination="6Ez-Ju-IYb" collectionClass="NSMutableArray" id="JGB-Vh-Y9h"/>
+                        <outletCollection property="passionLabel" destination="p97-Lr-7jV" collectionClass="NSMutableArray" id="VHt-sO-XDD"/>
+                        <outletCollection property="passionLabel" destination="hzJ-dc-R7B" collectionClass="NSMutableArray" id="4hT-ba-yre"/>
+                        <outletCollection property="passionLabel" destination="4n0-mG-iab" collectionClass="NSMutableArray" id="Pcv-1S-g0M"/>
+                        <outletCollection property="passionLabel" destination="6kz-Ga-Mmj" collectionClass="NSMutableArray" id="tvb-ia-xdd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wS9-qO-xR4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="ppA-kt-PTv" userLabel="Exit" sceneMemberID="exit"/>
                 <swipeGestureRecognizer direction="right" id="hBr-xV-RrA">
                     <connections>
                         <action selector="closeModal:" destination="1nu-lA-MR4" id="sG5-t2-C4q"/>
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1428" y="931.48425787106453"/>
+            <point key="canvasLocation" x="1329" y="139"/>
         </scene>
         <!--describeME-->
         <scene sceneID="1AP-Vb-v3l">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PlW-9q-dbb" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController title="describeME" automaticallyAdjustsScrollViewInsets="NO" id="6k1-oQ-hQW" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="OtX-CY-ctl">
@@ -500,13 +514,13 @@
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="AeJ-vK-snc"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="PlW-9q-dbb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-516" y="121"/>
+            <point key="canvasLocation" x="476" y="-639"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="gou-33-efb">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Y0-oX-Oxa" sceneMemberID="firstResponder"/>
                 <viewController id="0Wt-6h-5zD" customClass="ViewController" customModule="describeMe" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="YMG-LA-cEk"/>
@@ -517,21 +531,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="has copy" translatesAutoresizingMaskIntoConstraints="NO" id="rz3-wY-Yb1">
-                                <rect key="frame" x="0.0" y="20" width="375" height="763"/>
+                                <rect key="frame" x="0.0" y="-141" width="375" height="924"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="tony" translatesAutoresizingMaskIntoConstraints="NO" id="Doo-hv-B3e">
                                 <rect key="frame" x="68" y="229" width="240" height="248"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UQM-a6-DXE">
-                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <color key="barTintColor" red="0.99119585750000005" green="0.99629586940000003" blue="0.99602788689999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <items>
-                                    <navigationItem title="My App" id="gI4-dN-XM8"/>
-                                </items>
-                            </navigationBar>
                             <button opaque="NO" contentMode="center" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="5ZH-nW-mfw">
                                 <rect key="frame" x="0.0" y="581" width="375" height="86"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -574,7 +580,6 @@
                         <outlet property="passion" destination="uS5-uq-kdT" id="c0X-Iw-pzd"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="0Y0-oX-Oxa" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="476" y="138.98050974512745"/>
         </scene>
@@ -601,6 +606,9 @@
         <image name="wine-bottle" width="128" height="128"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="cF0-cl-Hn9"/>
+        <segue reference="xqx-wp-feC"/>
+        <segue reference="YAV-WP-Rj7"/>
+        <segue reference="nJi-y7-bTT"/>
+        <segue reference="VZt-zf-gPs"/>
     </inferredMetricsTieBreakers>
 </document>

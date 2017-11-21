@@ -42,6 +42,7 @@ class ViewController: UIViewController {
         transition.type = kCATransitionPush
         transition.subtype = kCATransitionFromRight
         self.view.window!.layer.add(transition, forKey: kCATransition)
+//        self.view.window!.layer.shadowColor = UIColor.red.cgColor
 
         self.present(view, animated: false)
 

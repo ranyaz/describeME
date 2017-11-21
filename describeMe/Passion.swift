@@ -11,22 +11,25 @@ import UIKit
 class Passion: UIViewController {
     
     @IBOutlet weak var passion: UIButton!
-    @IBOutlet weak var closeButton: UIButton!
-        
+    
+    @IBOutlet var passionsList: [UIButton]!
+    
     @IBAction func closeModal(_ sender: Any) {
         let transition = CATransition()
-        transition.duration = 0
+//        transition.duration = 0.5
         transition.type = kCATransitionPush
         transition.subtype = kCATransitionFromLeft
         self.view.window!.layer.add(transition, forKey: kCATransition)
         
         dismiss(animated: false)
+
     }
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        rotateButtons() 
+        rotateButtons()
+        self.navigationController?.navigationBar.barTintColor = .white
+
     }
     
     override func didReceiveMemoryWarning() {

@@ -32,11 +32,7 @@ class Passion: UIViewController {
         dismiss(animated: false)
     }
     
-    @IBAction func unwindToViewController (sender: UIStoryboardSegue){
-        navigationController?.popViewController(animated: false)
-        dismiss(animated: true, completion: nil)
-        
-    }
+
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -70,7 +70,7 @@
                                     <color key="titleColor" red="0.01962154172" green="0.01956331171" blue="0.023912029340000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="0Wt-6h-5zD" kind="custom" customClass="CloseModalLeft" customModule="describeMe" customModuleProvider="target" id="xqx-wp-feC"/>
+                                    <action selector="closeModal:" destination="iff-9M-HVS" eventType="touchUpInside" id="f2G-yQ-CHh"/>
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Carpe Diem" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="oWT-v4-Gxb">
@@ -109,13 +109,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="moreInfo" destination="F17-f3-VQk" id="zVf-t2-WfF"/>
+                        <outlet property="moreInfo" destination="F17-f3-VQk" id="pXd-ZZ-Dso"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ybo-oH-twA" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <swipeGestureRecognizer direction="right" id="ZFz-9r-Q9H">
                     <connections>
-                        <segue destination="0Wt-6h-5zD" kind="custom" customClass="CloseModalLeft" customModule="describeMe" customModuleProvider="target" id="9wV-72-ufy"/>
+                        <action selector="closeModal:" destination="iff-9M-HVS" id="sMD-n1-nax"/>
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
@@ -146,7 +146,7 @@
                                 </connections>
                             </imageView>
                             <button opaque="NO" contentMode="right" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="jqs-2i-X7o">
-                                <rect key="frame" x="0.0" y="258" width="59" height="150"/>
+                                <rect key="frame" x="0.0" y="258" width="49" height="150"/>
                                 <fontDescription key="fontDescription" name="AndaleMono" family="Andale Mono" pointSize="20"/>
                                 <state key="normal" title="MORE">
                                     <color key="titleColor" red="0.019621541723608971" green="0.019563311710953712" blue="0.023912029340863228" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -173,7 +173,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="FcT-9g-n5i">
-                                <rect key="frame" x="120" y="623" width="135" height="36"/>
+                                <rect key="frame" x="121" y="624" width="133" height="35"/>
                                 <fontDescription key="fontDescription" name="AndaleMono" family="Andale Mono" pointSize="20"/>
                                 <state key="normal" title="EXPERIENCES">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -183,17 +183,17 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="BBS-PL-DEu">
-                                <rect key="frame" x="288" y="215" width="99" height="35"/>
+                                <rect key="frame" x="290" y="215" width="97" height="35"/>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZCU-gV-Dog">
-                                <rect key="frame" x="106" y="103" width="163" height="58"/>
+                                <rect key="frame" x="70" y="103" width="235" height="58"/>
                                 <fontDescription key="fontDescription" name="AndaleMono" family="Andale Mono" pointSize="30"/>
                                 <state key="normal" title="Tony Sellitto">
                                     <color key="titleColor" red="0.030526306480169296" green="0.055573739111423492" blue="0.059511072933673859" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="clip" translatesAutoresizingMaskIntoConstraints="NO" id="6Bf-uE-KEl">
-                                <rect key="frame" x="288" y="315" width="99" height="36"/>
+                                <rect key="frame" x="290" y="315.5" width="97" height="35"/>
                                 <gestureRecognizers/>
                                 <fontDescription key="fontDescription" name="AndaleMono" family="Andale Mono" pointSize="20"/>
                                 <state key="normal" title="PASSIONS">
@@ -451,8 +451,7 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="unwindToViewControllerWithSender:" destination="1nu-lA-MR4" eventType="touchUpInside" id="81C-wZ-IKN"/>
-                                    <segue destination="ppA-kt-PTv" kind="unwind" unwindAction="unwindToViewControllerWithSender:" id="bbQ-xU-CBk"/>
+                                    <action selector="closeModal:" destination="1nu-lA-MR4" eventType="touchUpInside" id="qaD-os-eS2"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="X6h-jh-Arh">
@@ -490,10 +489,9 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wS9-qO-xR4" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="ppA-kt-PTv" userLabel="Exit" sceneMemberID="exit"/>
                 <swipeGestureRecognizer direction="right" id="hBr-xV-RrA">
                     <connections>
-                        <action selector="closeModal:" destination="1nu-lA-MR4" id="sG5-t2-C4q"/>
+                        <action selector="closeModal:" destination="1nu-lA-MR4" id="ykB-8O-B1U"/>
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
@@ -502,7 +500,6 @@
         <!--describeME-->
         <scene sceneID="1AP-Vb-v3l">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="PlW-9q-dbb" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController title="describeME" automaticallyAdjustsScrollViewInsets="NO" id="6k1-oQ-hQW" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="OtX-CY-ctl">
@@ -514,13 +511,13 @@
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="AeJ-vK-snc"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PlW-9q-dbb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="476" y="-639"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="gou-33-efb">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="0Y0-oX-Oxa" sceneMemberID="firstResponder"/>
                 <viewController id="0Wt-6h-5zD" customClass="ViewController" customModule="describeMe" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="YMG-LA-cEk"/>
@@ -531,7 +528,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="has copy" translatesAutoresizingMaskIntoConstraints="NO" id="rz3-wY-Yb1">
-                                <rect key="frame" x="0.0" y="-141" width="375" height="924"/>
+                                <rect key="frame" x="0.0" y="-114" width="375" height="924"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="tony" translatesAutoresizingMaskIntoConstraints="NO" id="Doo-hv-B3e">
@@ -580,6 +577,7 @@
                         <outlet property="passion" destination="uS5-uq-kdT" id="c0X-Iw-pzd"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Y0-oX-Oxa" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="476" y="138.98050974512745"/>
         </scene>
@@ -606,7 +604,6 @@
         <image name="wine-bottle" width="128" height="128"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="xqx-wp-feC"/>
         <segue reference="YAV-WP-Rj7"/>
         <segue reference="nJi-y7-bTT"/>
         <segue reference="VZt-zf-gPs"/>

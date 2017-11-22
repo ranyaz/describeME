@@ -21,7 +21,7 @@ class Experience: UIViewController {
                            usingSpringWithDamping: 0.2,
                            initialSpringVelocity: 6.0,
                            options: .allowUserInteraction,
-                           animations: { [weak self] in
+                           animations: {
                             btnsendtag.transform = .identity
                 },
                            completion: nil)

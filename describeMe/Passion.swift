@@ -24,7 +24,7 @@ class Passion: UIViewController {
                        usingSpringWithDamping: 0.2,
                        initialSpringVelocity: 6.0,
                        options: .allowUserInteraction,
-                       animations: { [weak self] in
+                       animations: { 
                         btnsendtag.transform = .identity
             },
                        completion: nil)
@@ -36,7 +36,7 @@ class Passion: UIViewController {
     
     @IBAction func closeModal(_ sender: Any) {
         let transition = CATransition()
-//        transition.duration = 0.5
+        transition.duration = 5
         transition.type = kCATransitionPush
         transition.subtype = kCATransitionFromLeft
         self.view.window!.layer.add(transition, forKey: kCATransition)

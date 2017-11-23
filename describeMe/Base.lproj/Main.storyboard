@@ -69,7 +69,7 @@
                                     <color key="titleColor" red="0.01962154172" green="0.01956331171" blue="0.023912029340000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="closeModal:" destination="iff-9M-HVS" eventType="touchUpInside" id="f2G-yQ-CHh"/>
+                                    <segue destination="BYZ-38-t0r" kind="custom" customClass="CloseModalLeft" customModule="describeMe" customModuleProvider="target" id="kUg-Kb-8KX"/>
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Carpe Diem" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="oWT-v4-Gxb">
@@ -115,7 +115,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ybo-oH-twA" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <swipeGestureRecognizer direction="left" id="JT2-8U-Wcs">
                     <connections>
-                        <action selector="closeModal:" destination="iff-9M-HVS" id="AGx-9c-VCB"/>
+                        <segue destination="BYZ-38-t0r" kind="custom" customClass="CloseModalLeft" customModule="describeMe" customModuleProvider="target" id="MVK-uL-NdS"/>
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
@@ -164,8 +164,9 @@
                                     <action selector="changeMainPic:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qgE-XN-Uml"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="FcT-9g-n5i">
-                                <rect key="frame" x="121" y="624" width="133" height="35"/>
+                            <button opaque="NO" contentMode="center" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="FcT-9g-n5i">
+                                <rect key="frame" x="120" y="623" width="135" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="AndaleMono" family="Andale Mono" pointSize="20"/>
                                 <state key="normal" title="EXPERIENCES">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -205,8 +206,6 @@
                             <constraint firstItem="GCb-P9-ckN" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="24" id="YkV-f2-zzM"/>
                             <constraint firstItem="GCb-P9-ckN" firstAttribute="top" secondItem="BBS-PL-DEu" secondAttribute="bottom" constant="8" symbolic="YES" id="dXF-HE-hv8"/>
                             <constraint firstAttribute="trailingMargin" secondItem="BBS-PL-DEu" secondAttribute="trailing" constant="-28" id="hTa-Y6-02w"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="FcT-9g-n5i" secondAttribute="bottom" constant="8" symbolic="YES" id="tIR-Tg-XAV"/>
-                            <constraint firstItem="FcT-9g-n5i" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zMy-No-Zir"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="0Vv-Ed-hK0"/>
@@ -427,7 +426,7 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="closeModal:" destination="1nu-lA-MR4" eventType="touchUpInside" id="qaD-os-eS2"/>
+                                    <segue destination="BYZ-38-t0r" kind="custom" customClass="CloseModalRight" customModule="describeMe" customModuleProvider="target" id="MlF-5C-v8j"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="X6h-jh-Arh">
@@ -565,7 +564,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wS9-qO-xR4" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <swipeGestureRecognizer direction="right" id="hBr-xV-RrA">
                     <connections>
-                        <action selector="closeModal:" destination="1nu-lA-MR4" id="ykB-8O-B1U"/>
+                        <segue destination="BYZ-38-t0r" kind="custom" customClass="CloseModalRight" customModule="describeMe" customModuleProvider="target" id="RKl-15-1On"/>
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
@@ -619,6 +618,7 @@
     <inferredMetricsTieBreakers>
         <segue reference="9p4-Nd-qqV"/>
         <segue reference="nJi-y7-bTT"/>
+        <segue reference="kUg-Kb-8KX"/>
         <segue reference="VZt-zf-gPs"/>
     </inferredMetricsTieBreakers>
 </document>

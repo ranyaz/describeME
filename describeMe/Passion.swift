@@ -31,21 +31,6 @@ class Passion: UIViewController {
         }
     }
 
-    
-    
-    
-    @IBAction func closeModal(_ sender: Any) {
-        let transition = CATransition()
-        transition.duration = 0.3
-        transition.type = kCATransitionReveal
-        transition.subtype = kCATransitionFromLeft
-        self.view.window!.layer.add(transition, forKey: kCATransition)
-        
-        dismiss(animated: false)
-    }
-    
-
-    
     override func viewDidLoad() {
         for btn in passionsList {
             btn.layer.shadowColor = UIColor.black.cgColor
@@ -56,14 +41,12 @@ class Passion: UIViewController {
         }
         super.viewDidLoad()
         rotateButtons()
-
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
     
     func rotateButtons() {
         passion.transform = CGAffineTransform(rotationAngle: -CGFloat.pi / 2)

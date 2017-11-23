@@ -12,21 +12,6 @@ class MoreInfo: UIViewController {
     
     @IBOutlet weak var moreInfo: UIButton!
     
-    
-    @IBAction func closeModal(_ sender: Any) {
-        let transition = CATransition()
-        transition.duration = 0.3
-        transition.type = kCATransitionReveal
-        transition.subtype = kCATransitionFromRight
-        self.view.window!.layer.add(transition, forKey: kCATransition)
-        
-        
-        dismiss(animated: false)
-        
-    }
-    
-    
-
     @IBAction func openMap(_ sender: Any) {
         let url = "http://maps.apple.com/?q=Benevento"
         UIApplication.shared.openURL(URL(string:url)!)

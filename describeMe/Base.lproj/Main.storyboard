@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
-        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -48,14 +47,14 @@
                                 <rect key="frame" x="43" y="217" width="40" height="40"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="19/09/1993" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="uVD-4e-Ck5">
+                            <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="19/09/1993" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="uVD-4e-Ck5">
                                 <rect key="frame" x="103" y="221" width="188" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="AndaleMono" family="Andale Mono" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 <dataDetectorType key="dataDetectorTypes" calendarEvent="YES"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Via Foria 23, Napoli" translatesAutoresizingMaskIntoConstraints="NO" id="kgy-Er-tmC">
+                            <textView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Via Foria 23, Napoli" translatesAutoresizingMaskIntoConstraints="NO" id="kgy-Er-tmC">
                                 <rect key="frame" x="103" y="317" width="183" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="AndaleMono" family="Andale Mono" pointSize="17"/>
@@ -73,7 +72,7 @@
                                     <action selector="closeModal:" destination="iff-9M-HVS" eventType="touchUpInside" id="f2G-yQ-CHh"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Carpe Diem" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="oWT-v4-Gxb">
+                            <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Carpe Diem" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="oWT-v4-Gxb">
                                 <rect key="frame" x="103" y="421" width="183" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="AndaleMono" family="Andale Mono" pointSize="17"/>
@@ -100,7 +99,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" name="AndaleMono" family="Andale Mono" pointSize="17"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" textContentType="location"/>
                                 <connections>
                                     <action selector="openMap:" destination="iff-9M-HVS" eventType="touchDown" id="csQ-b8-ZZY"/>
                                 </connections>
@@ -122,7 +121,7 @@
             </objects>
             <point key="canvasLocation" x="-434" y="139"/>
         </scene>
-        <!--Tony-->
+        <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="describeMe" customModuleProvider="target" sceneMemberID="viewController">
@@ -134,20 +133,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" image="has copy" translatesAutoresizingMaskIntoConstraints="NO" id="yZJ-wD-C2P">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="796"/>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="has copy" translatesAutoresizingMaskIntoConstraints="NO" id="yZJ-wD-C2P">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="733"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <gestureRecognizers/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="796" id="cS2-CN-deI"/>
-                                </constraints>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="3js-D2-Fc9" appends="YES" id="Moj-iZ-1O1"/>
                                     <outletCollection property="gestureRecognizers" destination="Nzh-sw-B6T" appends="YES" id="zwA-sl-dAS"/>
                                     <outletCollection property="gestureRecognizers" destination="TFe-jq-zPC" appends="YES" id="wSB-9s-DZ2"/>
                                 </connections>
                             </imageView>
-                            <button opaque="NO" contentMode="right" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="jqs-2i-X7o">
-                                <rect key="frame" x="0.0" y="258" width="49" height="150"/>
+                            <button opaque="NO" contentMode="right" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="jqs-2i-X7o">
+                                <rect key="frame" x="-2" y="258" width="49" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="AndaleMono" family="Andale Mono" pointSize="20"/>
                                 <state key="normal" title="MORE">
                                     <color key="titleColor" red="0.019621541723608971" green="0.019563311710953712" blue="0.023912029340863228" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -156,13 +154,6 @@
                                     <segue destination="iff-9M-HVS" kind="custom" customClass="SegueFromLeft" customModule="describeMe" customModuleProvider="target" id="uex-0P-qkw"/>
                                 </connections>
                             </button>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cqJ-oi-Zpi">
-                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                                <color key="barTintColor" red="0.99119585752487183" green="0.99629586935043335" blue="0.99602788686752319" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <items>
-                                    <navigationItem title="My App" id="tHF-1d-EdT"/>
-                                </items>
-                            </navigationBar>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GCb-P9-ckN">
                                 <rect key="frame" x="80" y="258" width="214" height="199"/>
                                 <constraints>
@@ -183,18 +174,12 @@
                                     <segue destination="Jod-D1-Pe4" kind="presentation" id="cF0-cl-Hn9"/>
                                 </connections>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="BBS-PL-DEu">
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="BBS-PL-DEu">
                                 <rect key="frame" x="290" y="215" width="97" height="35"/>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZCU-gV-Dog">
-                                <rect key="frame" x="70" y="103" width="235" height="58"/>
-                                <fontDescription key="fontDescription" name="AndaleMono" family="Andale Mono" pointSize="30"/>
-                                <state key="normal" title="Tony Sellitto">
-                                    <color key="titleColor" red="0.030526306480169296" green="0.055573739111423492" blue="0.059511072933673859" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="clip" translatesAutoresizingMaskIntoConstraints="NO" id="6Bf-uE-KEl">
-                                <rect key="frame" x="290" y="315.5" width="97" height="35"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="clip" translatesAutoresizingMaskIntoConstraints="NO" id="6Bf-uE-KEl">
+                                <rect key="frame" x="303" y="315.5" width="97" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <gestureRecognizers/>
                                 <fontDescription key="fontDescription" name="AndaleMono" family="Andale Mono" pointSize="20"/>
                                 <state key="normal" title="PASSIONS">
@@ -204,37 +189,28 @@
                                     <segue destination="1nu-lA-MR4" kind="custom" customClass="SegueFromRight" customModule="describeMe" customModuleProvider="target" id="9p4-Nd-qqV"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZCU-gV-Dog">
+                                <rect key="frame" x="70" y="69" width="235" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AndaleMono" family="Andale Mono" pointSize="30"/>
+                                <state key="normal" title="Tony Sellitto">
+                                    <color key="titleColor" red="0.030526306480169296" green="0.055573739111423492" blue="0.059511072933673859" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="jqs-2i-X7o" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="1Bo-iV-UZW"/>
-                            <constraint firstItem="GCb-P9-ckN" firstAttribute="top" secondItem="ZCU-gV-Dog" secondAttribute="bottom" constant="97" id="6Y8-rF-ksR"/>
-                            <constraint firstItem="6Bf-uE-KEl" firstAttribute="firstBaseline" secondItem="jqs-2i-X7o" secondAttribute="baseline" id="7wb-wP-aDM"/>
-                            <constraint firstItem="6Bf-uE-KEl" firstAttribute="trailing" secondItem="BBS-PL-DEu" secondAttribute="trailing" id="985-KG-D5a"/>
-                            <constraint firstItem="yZJ-wD-C2P" firstAttribute="trailing" secondItem="cqJ-oi-Zpi" secondAttribute="trailing" id="Arf-A8-0TG"/>
-                            <constraint firstItem="yZJ-wD-C2P" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="DuC-bx-hZf"/>
                             <constraint firstItem="GCb-P9-ckN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="J9U-6i-5rB"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="jqs-2i-X7o" secondAttribute="bottom" constant="259" id="PDs-wc-IbA"/>
-                            <constraint firstItem="BBS-PL-DEu" firstAttribute="top" secondItem="ZCU-gV-Dog" secondAttribute="bottom" constant="54" id="SUR-Jb-OJV"/>
-                            <constraint firstItem="yZJ-wD-C2P" firstAttribute="leading" secondItem="jqs-2i-X7o" secondAttribute="leading" id="Tc6-QP-lBb"/>
                             <constraint firstAttribute="trailingMargin" secondItem="GCb-P9-ckN" secondAttribute="trailing" constant="65" id="U5W-T7-SLW"/>
-                            <constraint firstItem="ZCU-gV-Dog" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WBi-MU-muk"/>
                             <constraint firstItem="GCb-P9-ckN" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="24" id="YkV-f2-zzM"/>
-                            <constraint firstItem="ZCU-gV-Dog" firstAttribute="top" secondItem="cqJ-oi-Zpi" secondAttribute="bottom" constant="39" id="bvL-Ri-YaH"/>
-                            <constraint firstItem="6Bf-uE-KEl" firstAttribute="leading" secondItem="BBS-PL-DEu" secondAttribute="leading" id="dOp-Qj-CWi"/>
                             <constraint firstItem="GCb-P9-ckN" firstAttribute="top" secondItem="BBS-PL-DEu" secondAttribute="bottom" constant="8" symbolic="YES" id="dXF-HE-hv8"/>
-                            <constraint firstItem="cqJ-oi-Zpi" firstAttribute="leading" secondItem="jqs-2i-X7o" secondAttribute="leading" id="eca-D2-kWs"/>
-                            <constraint firstItem="cqJ-oi-Zpi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="fbt-ob-NAK"/>
-                            <constraint firstItem="GCb-P9-ckN" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="jqs-2i-X7o" secondAttribute="trailing" id="h9d-Xm-EWo"/>
                             <constraint firstAttribute="trailingMargin" secondItem="BBS-PL-DEu" secondAttribute="trailing" constant="-28" id="hTa-Y6-02w"/>
-                            <constraint firstItem="jqs-2i-X7o" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="sph-KZ-rmC"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="FcT-9g-n5i" secondAttribute="bottom" constant="8" symbolic="YES" id="tIR-Tg-XAV"/>
-                            <constraint firstItem="cqJ-oi-Zpi" firstAttribute="bottom" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="wpD-XO-NMH"/>
-                            <constraint firstItem="jqs-2i-X7o" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="y8o-0I-sPs"/>
                             <constraint firstItem="FcT-9g-n5i" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zMy-No-Zir"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Tony" id="0Vv-Ed-hK0"/>
+                    <navigationItem key="navigationItem" id="0Vv-Ed-hK0"/>
+                    <nil key="simulatedTopBarMetrics"/>
                     <connections>
                         <outlet property="experience" destination="FcT-9g-n5i" id="bA5-sz-8DE"/>
                         <outlet property="mainPic" destination="GCb-P9-ckN" id="3vH-0y-4ji"/>
@@ -274,8 +250,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="background2" translatesAutoresizingMaskIntoConstraints="NO" id="7sj-aK-vnv">
-                                <rect key="frame" x="-31" y="0.0" width="447" height="711"/>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="background2" translatesAutoresizingMaskIntoConstraints="NO" id="7sj-aK-vnv">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <gestureRecognizers/>
                                 <connections>
@@ -442,7 +418,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="clip" translatesAutoresizingMaskIntoConstraints="NO" id="zy1-Y3-r7J">
-                                <rect key="frame" x="0.0" y="211" width="67" height="245"/>
+                                <rect key="frame" x="-12" y="211" width="67" height="245"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="245" id="j9w-11-kQU"/>
                                 </constraints>
@@ -598,10 +574,10 @@
         <!--describeME-->
         <scene sceneID="1AP-Vb-v3l">
             <objects>
-                <navigationController title="describeME" automaticallyAdjustsScrollViewInsets="NO" id="6k1-oQ-hQW" sceneMemberID="viewController">
+                <navigationController title="describeME" automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="6k1-oQ-hQW" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <nil key="simulatedTopBarMetrics"/>
                     <navigationBar key="navigationBar" opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="OtX-CY-ctl">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" red="0.99117833375930786" green="0.99634271860122681" blue="0.99171656370162964" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="barTintColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -617,71 +593,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PlW-9q-dbb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="476" y="-639"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="gou-33-efb">
-            <objects>
-                <viewController id="0Wt-6h-5zD" customClass="ViewController" customModule="describeMe" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="YMG-LA-cEk"/>
-                        <viewControllerLayoutGuide type="bottom" id="rHX-Zt-Uqx"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="uTf-dU-foK">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="has copy" translatesAutoresizingMaskIntoConstraints="NO" id="rz3-wY-Yb1">
-                                <rect key="frame" x="0.0" y="-114" width="375" height="924"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="tony" translatesAutoresizingMaskIntoConstraints="NO" id="Doo-hv-B3e">
-                                <rect key="frame" x="68" y="229" width="240" height="248"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="center" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="5ZH-nW-mfw">
-                                <rect key="frame" x="0.0" y="581" width="375" height="86"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="AndaleMono" family="Andale Mono" pointSize="20"/>
-                                <state key="normal" title="EXPERIENCES">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uDi-sH-MRr">
-                                <rect key="frame" x="0.0" y="64" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="AndaleMono" family="Andale Mono" pointSize="20"/>
-                                <state key="normal" title="Tony Sellitto">
-                                    <color key="titleColor" red="0.030526306480000001" green="0.055573739109999999" blue="0.059511072929999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="right" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="NNb-te-uew">
-                                <rect key="frame" x="0.0" y="326" width="60" height="54"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="AndaleMono" family="Andale Mono" pointSize="20"/>
-                                <state key="normal" title="MORE">
-                                    <color key="titleColor" red="0.01962154172" green="0.01956331171" blue="0.023912029340000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="headTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uS5-uq-kdT">
-                                <rect key="frame" x="316" y="305" width="63" height="96"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="AndaleMono" family="Andale Mono" pointSize="20"/>
-                                <state key="normal" title="PASSIONS">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                    </view>
-                    <connections>
-                        <outlet property="experience" destination="5ZH-nW-mfw" id="AFP-78-JzR"/>
-                        <outlet property="moreInfo" destination="NNb-te-uew" id="NlY-di-AfJ"/>
-                        <outlet property="passion" destination="uS5-uq-kdT" id="c0X-Iw-pzd"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="0Y0-oX-Oxa" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="476" y="138.98050974512745"/>
         </scene>
     </scenes>
     <resources>

@@ -36,8 +36,8 @@ class Passion: UIViewController {
     
     @IBAction func closeModal(_ sender: Any) {
         let transition = CATransition()
-        transition.duration = 5
-        transition.type = kCATransitionPush
+        transition.duration = 0.3
+        transition.type = kCATransitionReveal
         transition.subtype = kCATransitionFromLeft
         self.view.window!.layer.add(transition, forKey: kCATransition)
         

@@ -15,13 +15,14 @@ class MoreInfo: UIViewController {
     
     @IBAction func closeModal(_ sender: Any) {
         let transition = CATransition()
-        transition.duration = 0.5
-        transition.type = kCATransitionPush
+        transition.duration = 0.3
+        transition.type = kCATransitionReveal
         transition.subtype = kCATransitionFromRight
         self.view.window!.layer.add(transition, forKey: kCATransition)
+        
+        
         dismiss(animated: false)
-
-
+        
     }
     
     

@@ -48,6 +48,9 @@ class Passion: UIViewController {
     
     override func viewDidLoad() {
         for btn in passionsList {
+            btn.layer.shadowColor = UIColor.black.cgColor
+            btn.layer.shadowOffset = CGSize(width: 0.3, height: 2.0)
+            btn.layer.shadowOpacity = 0.5            
             btn.addTarget(self, action: #selector(growInClick), for: .touchUpInside)
             btn.tag = 1
         }
